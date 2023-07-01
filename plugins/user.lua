@@ -10,11 +10,11 @@ return {
     end,
   },
 
-  {
-    -- install clangd_extensions
-    "p00f/clangd_extensions.nvim",
-    ft = { "c", "cpp" },
-  },
+  -- {
+  --   -- install clangd_extensions
+  --   "p00f/clangd_extensions.nvim",
+  --   ft = { "c", "cpp" },
+  -- },
   {
     "folke/todo-comments.nvim",
     requires = "nvim-lua/plenary.nvim",

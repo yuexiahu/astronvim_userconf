@@ -8,7 +8,7 @@ return {
       -- Ensure that opts.ensure_installed exists and is a table
       if not opts.ensure_installed then opts.ensure_installed = {} end
       -- Add julia lsp and toml lsp to ensure_installed
-      utils.list_insert_unique(opts.ensure_installed, { "clangd", "bashls", "lua_ls" })
+      utils.list_insert_unique(opts.ensure_installed, { "bashls", "lua_ls" })
     end,
   },
   -- use mason-null-ls to configure Formatters/Linter installation for null-ls sources
