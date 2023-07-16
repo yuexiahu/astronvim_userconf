@@ -9,6 +9,10 @@ return {
     wrap = false, -- sets vim.opt.wrap
     autoindent = true, -- enable autoindent
     backspace = "indent,eol,start", -- allow backspacing over everything in insert mode
+    encoding = "utf-8", -- set encoding
+    fileencoding = "utf-8", -- set fileencoding
+    fileencodings = "ucs-bom,utf-8,gbk,gb18030,big5,euc-jp,latin1", -- set fileencodings
+    swapfile = false,
 
     -- gui options
     guifont = "JetBrainsMonoNL NF:h11", -- font for vim gui

@@ -12,7 +12,7 @@ local swap_next, swap_prev = (function()
   local n, p = {}, {}
   for key, obj in pairs(swap_objects) do
     n[string.format("<leader>s%s", key)] = obj
-    p[string.format("<leader>S%s", key)] = obj
+    p[string.format("<leader>s%s", string.upper(key))] = obj
   end
 
   return n, p
