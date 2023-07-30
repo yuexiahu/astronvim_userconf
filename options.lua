@@ -65,10 +65,6 @@ return {
     neovide_padding_bottom = 1,
     neovide_padding_right = 1,
     neovide_padding_left = 1,
-    -- neovide_floating_blur_amount_x = 2.0,
-    -- neovide_floating_blur_amount_y = 2.0,
-    -- neovide_hide_mouse_when_typing = false,
-    -- neovide_scroll_animation_length = 1.0,
   },
 }
 -- If you need more control, you can use the function()...end notation

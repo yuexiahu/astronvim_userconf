@@ -10,23 +10,26 @@ return {
   { import = "astrocommunity.editing-support.refactoring-nvim" },
   { import = "astrocommunity.editing-support.suda-vim" },
   { import = "astrocommunity.editing-support.telescope-undo-nvim" },
+  { import = "astrocommunity.editing-support.todo-comments-nvim" },
+  { import = "astrocommunity.git.git-blame-nvim" },
   { import = "astrocommunity.indent.indent-tools-nvim" },
-  { import = "astrocommunity.motion.leap-nvim" },
+  { import = "astrocommunity.motion.flash-nvim" },
   { import = "astrocommunity.pack.cmake" },
   { import = "astrocommunity.pack.cpp" },
+  { import = "astrocommunity.pack.json" },
+  { import = "astrocommunity.pack.lua" },
+  { import = "astrocommunity.pack.go" },
+  { import = "astrocommunity.pack.markdown" },
+  { import = "astrocommunity.lsp.inc-rename-nvim" },
+  { import = "astrocommunity.lsp.lsp-signature-nvim" },
+
+  --NOTE: No needed for nvim 0.10.0
+  { import = "astrocommunity.lsp.lsp-inlayhints-nvim" },
+
   {
     "Civitasv/cmake-tools.nvim",
     opts = {
       cmake_build_directory = "build",
     },
   },
-  { import = "astrocommunity.pack.json" },
-  { import = "astrocommunity.pack.lua" },
-  { import = "astrocommunity.pack.go" },
-  { import = "astrocommunity.pack.markdown" },
-  { import = "astrocommunity/terminal-integration/flatten-nvim" },
-  { import = "astrocommunity/lsp/inc-rename-nvim" },
-
-  --NOTE: No needed for nvim 0.10.0
-  { import = "astrocommunity/lsp/lsp-inlayhints-nvim" },
 }

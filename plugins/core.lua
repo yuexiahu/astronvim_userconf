@@ -73,6 +73,9 @@ return {
         r = { name = "Refactor" },
         s = { name = "Swap" },
       }, { mode = "n", prefix = "<leader>" })
+      wk.register({
+        a = { name = "Switch case" },
+      }, { mode = "n", prefix = "g"})
     end,
   },
 }
