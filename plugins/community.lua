@@ -6,17 +6,17 @@ return {
 
   { import = "astrocommunity.colorscheme.catppuccin" },
   { import = "astrocommunity.completion.copilot-lua-cmp" },
+  { import = "astrocommunity.editing-support.nvim-devdocs" },
   { import = "astrocommunity.editing-support.neogen" },
   { import = "astrocommunity.editing-support.refactoring-nvim" },
   { import = "astrocommunity.editing-support.suda-vim" },
   { import = "astrocommunity.editing-support.telescope-undo-nvim" },
   { import = "astrocommunity.editing-support.todo-comments-nvim" },
   { import = "astrocommunity.git.diffview-nvim" },
-  { import = "astrocommunity.git.git-blame-nvim" },
-  { import = "astrocommunity.git.neogit" },
   { import = "astrocommunity.indent.indent-tools-nvim" },
   { import = "astrocommunity.motion.flash-nvim" },
-  { import = "astrocommunity.pack.cmake" },
+  { import = "astrocommunity.markdown-and-latex.glow-nvim" },
+  -- { import = "astrocommunity.pack.cmake" },
   { import = "astrocommunity.pack.cpp" },
   { import = "astrocommunity.pack.json" },
   { import = "astrocommunity.pack.lua" },
@@ -26,8 +26,27 @@ return {
   { import = "astrocommunity.lsp.lsp-signature-nvim" },
 
   --NOTE: No needed for nvim 0.10.0
-  { import = "astrocommunity.lsp.lsp-inlayhints-nvim" },
+  -- { import = "astrocommunity.lsp.lsp-inlayhints-nvim" },
 
+  -- flash.nvim 关闭搜索集成
+  {
+    "folke/flash.nvim",
+    opts = {
+      modes = {
+        search = {
+          enabled = false,
+        },
+      },
+    },
+    keys = {
+      {
+        "<c-s>",
+        mode = { "c" },
+        function() require("flash").toggle() end,
+        desc = "Toggle Flash Search",
+      },
+    },
+  },
   {
     "Civitasv/cmake-tools.nvim",
     opts = {

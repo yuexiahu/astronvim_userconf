@@ -2,7 +2,7 @@
 return {
   opt = {
     -- set to true or false etc.
-    relativenumber = true, -- sets vim.opt.relativenumber
+    relativenumber = false, -- sets vim.opt.relativenumber
     number = true, -- sets vim.opt.number
     spell = false, -- sets vim.opt.spell
     signcolumn = "auto", -- sets vim.opt.signcolumn to auto
@@ -24,7 +24,6 @@ return {
     autopairs_enabled = true, -- enable autopairs at start
     diagnostics_mode = 3, -- set the visibility of diagnostics in the UI (0=off, 1=only show in status line, 2=virtual text off, 3=all on)
     ui_notifications_enabled = true, -- disable notifications when toggling UI elements
-    -- icons_enabled = (vim.env.TMUX == nil), -- disable icons in tmux 
     clipboard = {
       name = "win32yank-wsl",
       copy = {

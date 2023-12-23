@@ -1,0 +1,20 @@
+{
+  "header": {
+    "prefix": ["header", "#!"],
+    "description": "Header of the script",
+    "body": [
+      "#!/bin/bash",
+      "#Description: ${1:Description}",
+      "#Author: huzh",
+      "#Version: ${2:v1.0.0}",
+      "#Date: $CURRENT_YEAR-$CURRENT_MONTH-$CURRENT_DATE $CURRENT_HOUR:$CURRENT_MINUTE:$CURRENT_SECOND",
+      "#Usage: ${3:}",
+      "",
+      "main() {",
+      "  echo \"Hello World!\"",
+      "}",
+      "",
+      "main \"$@\""
+    ]
+  }
+}
